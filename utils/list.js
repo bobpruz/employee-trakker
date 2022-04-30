@@ -28,6 +28,19 @@ listAllRoles() {
     })
     .catch((error) => console.log(error));
 },
+
+// list employees
+listAllEmployees() {
+  const sql = `SELECT * FROM employees`;
+
+  db.promise()
+    .query(sql)
+    .then(([response]) => {
+      console.table(response);
+      app.promptUser();
+    })
+    .catch((error) => console.log(error));
+},
 };
 
 module.exports = list;

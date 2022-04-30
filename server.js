@@ -16,8 +16,9 @@ const promptUser = () => {
           "Add a Department",
           "Add a Role",
           "Add an Employee",
-          "List all Departments",
-          "List all Roles",
+          "View all Departments",
+          "View all Roles",
+          "View all Employees",
           "Exit",
         ],
       },
@@ -37,11 +38,14 @@ const promptUser = () => {
         add.addEmployee();
       }
       // list departments
-      if (choices === "List Departments") {
+      if (choices === "View all Departments") {
         list.listAllDepartments();
       }
-      if (choices === "List Roles") {
+      if (choices === "View all Roles") {
         list.listAllRoles();
+      }
+      if (choices === "View all Employees") {
+        list.listAllEmployees();
       }
       if (choices === "Exit") {
         db.end();
