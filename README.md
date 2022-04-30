@@ -7,7 +7,7 @@
     <li><a href="#description">Description</a></li>
     <li><a href="#user-story">User Story</a></li>
     <li><a href="#built-with">Built With</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#maintainer">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#screenshot">Screenshot</a></li>
   </ol>
@@ -28,9 +28,14 @@ SO THAT I can organize and plan my business
 
 JavaScript, Node, NPM, express.js
 
-## Contributing
+## Maintainer
 
 <a href="mailto:bobpruz@gmail.com">Email: Robert Prusinowski</a>
+
+ ## License
+
+  ![GPL-3.0](https://img.shields.io/static/v1?label=license&message=GPL-3.0&color=brightgreen "Badge")
+
 
 ## Screenshot
 
