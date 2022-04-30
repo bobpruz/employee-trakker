@@ -4,6 +4,7 @@ const db = require("./db/connection");
 // import prompt functions
 const add = require("./utils/add");
 const list = require("./utils/list");
+const update = require("./utils/update");
 
 const promptUser = () => {
   inquirer
@@ -19,6 +20,7 @@ const promptUser = () => {
           "View all Departments",
           "View all Roles",
           "View all Employees",
+          "Update an Employee",
           "Exit",
         ],
       },
@@ -46,6 +48,9 @@ const promptUser = () => {
       }
       if (choices === "View all Employees") {
         list.listAllEmployees();
+      }
+      if (choices === "Update an Employee") {
+        update.updateEmployeeRole();
       }
       if (choices === "Exit") {
         db.end();

@@ -1,4 +1,4 @@
-const conTable = require("console.table");
+require("console.table");
 const app = require("../server");
 const db = require("../db/connection");
 
@@ -31,7 +31,7 @@ listAllRoles() {
 
 // list employees
 listAllEmployees() {
-  const sql = `SELECT * FROM employees`;
+  const sql = `SELECT * FROM employee`;
 
   db.promise()
     .query(sql)
