@@ -3,6 +3,7 @@ const db = require("./db/connection");
 
 // import prompt functions
 const add = require("./utils/add");
+const list = require("./utils/list");
 
 const promptUser = () => {
   inquirer
@@ -11,7 +12,13 @@ const promptUser = () => {
         type: "list",
         name: "choices",
         message: "Please select a task",
-        choices: ["Add a Department", "Add a Role", "Add an Employee", "Exit"],
+        choices: [
+          "Add a Department",
+          "Add a Role",
+          "Add an Employee",
+          "List Departments",
+          "Exit",
+        ],
       },
     ])
     .then((answers) => {
@@ -27,6 +34,10 @@ const promptUser = () => {
       // add employee
       if (choices === "Add an Employee") {
         add.addEmployee();
+      }
+      // list departments
+      if (choices === "List Departments") {
+        list.listAllDepartments();
       }
       if (choices === "Exit") {
         db.end();
