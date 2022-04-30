@@ -38,7 +38,7 @@ JavaScript, Node, NPM, express.js
 
 ## Video Link
 
-![Link to demo](https://drive.google.com/file/d/1OlCkUevXEUypdFscYoNugRH22xZS4pPk/view?usp=sharing)
+<a href="https://drive.google.com/file/d/1OlCkUevXEUypdFscYoNugRH22xZS4pPk/view?usp=sharing">Link to Video</a>
 
 ## Screenshot
 
