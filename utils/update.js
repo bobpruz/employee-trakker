@@ -52,7 +52,7 @@ const update = {
                     params[0] = role
                     params[1] = employee 
                      
-                    // Update employee role
+                    // Update employee's role
                     let sql = `UPDATE employee SET role_id = ? WHERE id = ?`;
     
                     db.promise().query(sql, params).then(() => {
