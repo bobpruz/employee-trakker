@@ -16,7 +16,8 @@ const promptUser = () => {
           "Add a Department",
           "Add a Role",
           "Add an Employee",
-          "List Departments",
+          "List all Departments",
+          "List all Roles",
           "Exit",
         ],
       },
@@ -38,6 +39,9 @@ const promptUser = () => {
       // list departments
       if (choices === "List Departments") {
         list.listAllDepartments();
+      }
+      if (choices === "List Roles") {
+        list.listAllRoles();
       }
       if (choices === "Exit") {
         db.end();
